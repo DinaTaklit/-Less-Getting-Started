@@ -1,5 +1,6 @@
-@primaryColor: #e6af2e;
-@secondaryColor: #222;
+@import 'colors';
+
+
 @borderRadius: 2px;
 @prefix: info;
 @breakpoints: {
@@ -7,23 +8,11 @@
   tablet: 767px;
   phone: 480px;
 }
-@highlightColor:#6b0504;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
+@import (css) url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+@import "reset";
 
 html,
 body {
