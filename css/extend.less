@@ -1,3 +1,11 @@
+/** This is a detached ruleset if you redfine it anywhere else it will take the new rules follwing the 
+casacading principles means the latest one is the only one that will be concidered.**/
 @box-shadow:{
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+/** This is a mixin It can be extended means if you redfine this mixin somewhere else the rules
+ that you put will be added with each other without deleting any one **/
+.font-info(){
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
 }
