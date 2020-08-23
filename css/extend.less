@@ -8,8 +8,15 @@ casacading principles means the latest one is the only one that will be concider
 
 /** This is a mixin It can be extended means if you redfine this mixin somewhere else the rules
  that you put will be added with each other without deleting any one **/
-.font-info(){
+// .font-info(){
+//     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+// }
+
+// Namespacing mixings
+#ps {
+  .font-info() {
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+  }
 }
 
 /** Parametrizing mixings**/
