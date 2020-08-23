@@ -94,6 +94,13 @@ ul.menu li a {
   background-color: rgba(255, 255, 255, 0.25);
   border: 1px #222 solid;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  /** But if you want mobile fist design it would be better to bring
+   this media to the buttom of the page and put them alltogether**/
+}
+@media only screen and (min-width: 767px) {
+  .song {
+    width: 95%;
+  }
 }
 .song .title {
   font-weight: 700;
@@ -114,9 +121,6 @@ ul.menu li a {
   .info-img {
     float: right;
     max-width: 80px;
-  }
-  .song {
-    width: 95%;
   }
   .audioplayer .audioplayer-bar {
     display: block;
