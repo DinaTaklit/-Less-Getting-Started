@@ -12,12 +12,6 @@ casacading principles means the latest one is the only one that will be concider
 //     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
 // }
 
-// Namespacing mixings
-#ps {
-  .font-info() {
-    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
-  }
-}
 
 /** Parametrizing mixings**/
 .box-me(@width: 1px, @color: @secondaryColor, @style: solid) {
@@ -29,4 +23,26 @@ casacading principles means the latest one is the only one that will be concider
 /** Mixins as Functions**/
 .multi(@x, @y){
     @result: @x * @y;
+}
+
+// Namespacing mixings
+#ps {
+  .font-info() {
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+
+/** Guards in mixins**/
+
+.fore-color() {
+  background-color: @primaryColor;
+}
+
+.fore-color() when (lightness(@primaryColor) > 50%) {
+  color: White;
+}
+
+.fore-color() when (lightness(@primaryColor) <= 50%) {
+  color: Black;
 }
