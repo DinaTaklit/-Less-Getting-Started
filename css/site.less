@@ -1,5 +1,6 @@
 @primaryColor: #e6af2e;
 @secondaryColor: #222;
+@borderRadius: 2px;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
@@ -41,7 +42,7 @@ h6 {
   border: 1px @secondaryColor solid;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
   margin: 1px;
-  border-radius: 2px;
+  border-radius: @borderRadius;
 }
 
 .container {
@@ -85,7 +86,7 @@ ul.menu {
 ul.menu li {
   margin: 5px 2px;
   background: #6b0504;
-  border-radius: 2px;
+  border-radius: @borderRadius;
   line-height: 1.7;
   padding: 5px;
   cursor: pointer;
@@ -105,8 +106,9 @@ ul.menu li a {
 }
 
 .song {
+  @borderRadius:10px;
   width: 175px;
-  border-radius: 10px;
+  border-radius: @borderRadius;
   padding: 6px;
   margin: 2px 0;
   background-color: rgba(255, 255, 255, .25);
