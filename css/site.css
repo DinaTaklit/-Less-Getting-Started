@@ -76,12 +76,12 @@ ul.menu li {
   padding: 5px;
   cursor: pointer;
 }
-ul.menu li:hover {
-  background: #9c0706;
-}
 ul.menu li a {
   text-decoration: none;
   color: #ddd;
+}
+ul.menu li:hover {
+  background: #9c0706;
 }
 #main {
   display: block;

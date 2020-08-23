@@ -77,30 +77,28 @@ footer {
 ul.menu {
   list-style-type: none;
   display: flex;
-}
 
-ul.menu li {
+  li {
   margin: 5px 2px;
   background: @highlightColor;
   border-radius: @borderRadius;
   line-height: 1.7;
   padding: 5px;
   cursor: pointer;
-}
-
-
-ul.menu li:hover when (lightness(@highlightColor) < 50%) {
+  a {
+    text-decoration: none;
+    color: #ddd;
+    }
+  }
+  li:hover when (lightness(@highlightColor) < 50%) {
   background: lighten(@highlightColor, 10%);
-}
+  }
 
-ul.menu li:hover when (lightness(@highlightColor) >= 50%) {
+  li:hover when (lightness(@highlightColor) >= 50%) {
   background: darken(@highlightColor, 10%);
+  }
 }
 
-ul.menu li a {
-  text-decoration: none;
-  color: #ddd;
-}
 
 #main {
   display: block;
@@ -115,20 +113,23 @@ ul.menu li a {
   background-color: rgba(255, 255, 255, .25);
   border: 1px @secondaryColor solid;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
-}
-
-.song .title {
+  .title {
   font-weight: 700;
+  }
 }
 
-.audioplayer .audioplayer-bar {
+
+.audioplayer {
+  .audioplayer-bar {
   display: none;
   width: 0;
+  }
+  .audioplayer-time.audioplayer-time-duration {
+  display: none;
+  }
 }
 
-.audioplayer .audioplayer-time.audioplayer-time-duration {
-  display: none;
-}
+
 
 
 @media only screen and (min-width: @breakpoints[phone]) {
