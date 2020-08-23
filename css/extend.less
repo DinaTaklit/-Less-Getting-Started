@@ -14,7 +14,9 @@ casacading principles means the latest one is the only one that will be concider
 
 /** Parametrizing mixings**/
 .box-me(@width: 1px, @color: @secondaryColor, @style: solid) {
-  border: @arguments;
+  // border: @width @color @style; // This is the olders way of declaring things
+  border: @arguments; // This by using @arguments in the mixin it will take them in order
+  border-radius: @width;
 }
 
 /** Mixins as Functions**/
