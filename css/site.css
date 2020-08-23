@@ -1,5 +1,6 @@
 /** This is a detached ruleset if you redfine it anywhere else it will take the new rules follwing the 
 casacading principles means the latest one is the only one that will be concidered.**/
+/** Parametrizing mixings**/
 /** Mixins as Functions**/
 /** Guards in mixins**/
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
@@ -23,6 +24,8 @@ body {
   margin: 0;
   padding: 0;
   background: #222;
+  z-index: 10;
+  min-height: 262.5;
 }
 h1,
 h2,
