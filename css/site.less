@@ -1,5 +1,5 @@
 @import 'colors';
-
+@import 'extend';
 
 @borderRadius: 2px;
 @prefix: info;
@@ -36,7 +36,7 @@ h6 {
 .@{prefix}-img {
   max-width: 100%;
   border: 1px @secondaryColor solid;
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  @box-shadow();
   margin: 1px;
   border-radius: @borderRadius;
 }
@@ -113,7 +113,7 @@ ul.menu {
   margin: 2px 0;
   background-color: rgba(255, 255, 255, .25);
   border: 1px @secondaryColor solid;
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  @box-shadow();
   /** But if you want mobile fist design it would be better to bring
    this media to the buttom of the page and put them alltogether**/
   @media only screen and (min-width: @breakpoints[tablet]) {
