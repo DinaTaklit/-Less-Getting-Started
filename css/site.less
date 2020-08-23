@@ -7,7 +7,7 @@
   tablet: 767px;
   phone: 480px;
 }
-@heighlightColor:#6b0504;
+@highlightColor:#6b0504;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
@@ -92,15 +92,20 @@ ul.menu {
 
 ul.menu li {
   margin: 5px 2px;
-  background: @heighlightColor;
+  background: @highlightColor;
   border-radius: @borderRadius;
   line-height: 1.7;
   padding: 5px;
   cursor: pointer;
 }
 
-ul.menu li:hover {
-  background: lighten(@heighlightColor, 10%);
+
+ul.menu li:hover when (lightness(@highlightColor) < 50%) {
+  background: lighten(@highlightColor, 10%);
+}
+
+ul.menu li:hover when (lightness(@highlightColor) >= 50%) {
+  background: darken(@highlightColor, 10%);
 }
 
 ul.menu li a {
