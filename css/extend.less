@@ -1,3 +1,5 @@
+@import "colors";
+
 /** This is a detached ruleset if you redfine it anywhere else it will take the new rules follwing the 
 casacading principles means the latest one is the only one that will be concidered.**/
 @box-shadow:{
@@ -8,4 +10,9 @@ casacading principles means the latest one is the only one that will be concider
  that you put will be added with each other without deleting any one **/
 .font-info(){
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/** Parametrizing mixings**/
+.box-me(@width: 1px, @color: @secondaryColor, @style: solid) {
+  border: @arguments;
 }

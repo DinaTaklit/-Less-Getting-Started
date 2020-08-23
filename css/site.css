@@ -1,3 +1,6 @@
+/** This is a detached ruleset if you redfine it anywhere else it will take the new rules follwing the 
+casacading principles means the latest one is the only one that will be concidered.**/
+/** Parametrizing mixings**/
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
 body,
@@ -92,7 +95,7 @@ ul.menu li a {
   padding: 6px;
   margin: 2px 0;
   background-color: rgba(255, 255, 255, 0.25);
-  border: 1px #222 solid;
+  border: 2px #222 solid;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
   /** But if you want mobile fist design it would be better to bring
    this media to the buttom of the page and put them alltogether**/
