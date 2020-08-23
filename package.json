@@ -4,7 +4,7 @@
   "description": "An example site",
   "scripts": {
     "start": "lite-server",
-    "less": "lessc css/site.less css/site.css"
+    "less": "lessc --lists css/site.less css/site.css"
   },
   "author": "Shawn Wildermuth",
   "license": "MIT",

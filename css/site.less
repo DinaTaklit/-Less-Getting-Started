@@ -16,7 +16,7 @@
 
 html,
 body {
-  #ps .font-info();
+  #ps.font-info();
   margin: 0;
   padding: 0;
   background: @secondaryColor;
@@ -139,6 +139,18 @@ ul.menu {
   }
 }
 
+
+/**
+* First install lists plugin : npm install less-plugin-lists -g
+* update the less script to look over the plugin
+**/
+// Use lists less plugin
+.for(@x, 4)
+{
+  .col-@{x} {
+    width: @x * 50px;
+  }
+}
 
 
 

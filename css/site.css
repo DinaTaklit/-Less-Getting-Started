@@ -1,7 +1,7 @@
 /** This is a detached ruleset if you redfine it anywhere else it will take the new rules follwing the 
 casacading principles means the latest one is the only one that will be concidered.**/
-/** Parametrizing mixings**/
 /** Mixins as Functions**/
+/** Guards in mixins**/
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
 body,
@@ -116,6 +116,22 @@ ul.menu li a {
 }
 .audioplayer .audioplayer-time.audioplayer-time-duration {
   display: none;
+}
+/**
+* First install lists plugin : npm install less-plugin-lists -g
+* update the less script to look over the plugin
+**/
+.col-1 {
+  width: 50px;
+}
+.col-2 {
+  width: 100px;
+}
+.col-3 {
+  width: 150px;
+}
+.col-4 {
+  width: 200px;
 }
 @media only screen and (min-width: 480px) {
   .container {
