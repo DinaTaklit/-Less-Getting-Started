@@ -94,7 +94,7 @@ ul.menu li {
   cursor: pointer;
 }
 ul.menu li:hover {
-  background: #a3320b;
+  background: #9c0706;
 }
 ul.menu li a {
   text-decoration: none;
@@ -148,6 +148,6 @@ ul.menu li a {
     width: 989px;
   }
   .song {
-    width: 600px;
+    width: cell(329.66666667px);
   }
 }
